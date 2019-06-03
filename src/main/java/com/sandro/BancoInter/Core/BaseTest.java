@@ -16,11 +16,11 @@ public class BaseTest {
         DriverFactory.killDriver();
     }
 
-    @AfterMethod
-    public void tearDown(ITestResult testResult) {
-        getDriver().resetApp();
+    //@AfterMethod
+   // public void tearDown(ITestResult testResult) {
+   //     getDriver().resetApp();
 
-    }
+  //  }
 
     public void esperar(long tempo) {
         try {

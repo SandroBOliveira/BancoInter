@@ -17,18 +17,18 @@ public class LoginTest extends BaseTest {
     public void deveRealizarLogin() {
         page.clicarBotao("JÁ SOU CLIENTE");
         assertEquals("ACESSAR", page.obterBotaoLogin());
-        page.escreverCpf("01653579676");
+        page.escreverCpf("");
         page.clicarBotao("ACESSAR");
-        page.escreverConta("23256990");
+        page.escreverConta("");
         page.clicarBotao("ACESSAR");
-        page.escreverSenha("sboEA21*");
+        page.escreverSenha("");
         page.clicarBotao("ACESSAR");
         page.permitirAcesso();
         assertEquals("CADASTRAR I-SAFE", page.obterBotaoIsafe());
         page.clicarIsafe();
-        page.escreverCodigo1("8");
-        page.escreverCodigo2("5");
-        page.escreverCodigo3("0");
+        page.escreverCodigo1("");
+        page.escreverCodigo2("");
+        page.escreverCodigo3("");
         page.clicarBotao("CONTINUAR");
         esperar(1000);
         page.escreverValidade("0224");
@@ -49,6 +49,7 @@ public class LoginTest extends BaseTest {
 
 
     }
+
 
 
 }
